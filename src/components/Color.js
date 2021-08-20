@@ -3,7 +3,7 @@ import React from 'react';
 const Color = (props) => {
     const {color, setEditColor, toggleEdit, deleteColor} = props;
 
-    const handleDelete = (e) => {
+    function handleDelete (e) {
         e.stopPropagation();
         deleteColor(color);
         toggleEdit(false);
